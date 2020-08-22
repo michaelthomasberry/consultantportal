@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block body %}
+
+        <h1> Create New Project </h1>
+        <br>
+        
+<form action="/register" method=post>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Project Name</label>
+      <input type="text" name="project_name" class="form-control" id="inputEmail4">
+    </div>
+    
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" name="project_type" id="inputGroupSelect01">
+    <option selected>Choose project type</option>
+    <option value="Commercial Heating & Hotwater">Commercial Heating & Hotwater</option>
+    <option value="District Heating">District Heating</option>
+    <option value="Industrial Process Hotwater & Steam">Industrial process hotwater & steam</option>
+  </select>
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Sector</label>
+  </div>
+  <select class="custom-select" name="sector" id="inputGroupSelect01">
+    <option selected>Choose sector</option>
+    <option value="Eductation">Education</option>
+    <option value="Hotels">Hotels</option>
+    <option value="Healthcare">Healthcare</option>
+    <option value="Retail">Retail</option>
+    <option value="District Heating">District Heating</option>
+  </select>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Building type</label>
+  </div>
+  <select class="custom-select" name="building_type" id="inputGroupSelect01">
+    <option selected>Choose type</option>
+    <option value="Newbuild">Newbuild</option>
+    <option value="Retrofit">Retrofit</option>
+    <option value="Deep Renovation">Deep renovation</option>
+    
+  </select>
+</div>
+    
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Current Project Stage</label>
+  </div>
+  <select class="custom-select" name="projet_stage" id="inputGroupSelect01">
+    <option selected>Choose stage</option>
+    <option value="Feasibility Study (Stage 1/2)">Feasibility Study (Stage 1/2)</option>
+    <option value="Initial Design (Stage 3/4a)">Initial Design (Stage 3/4a)</option>
+    <option value="Out to Tender">Out to Tender</option>
+    <option value="Project Awarded and Detailed Design (Stage 4b/5)">Project Awarded and Detailed Design (Stage 4b/5)</option>
+    <option value="Project and Supplier Evaluaiton (Stage 5)">Project and Supplier Evaluaiton (Stage 5)</option>
+  </select>
+</div>
+    
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="check_box" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        We will store the information you provide to us. We will only use this information for the purpose of assisting you in your enquiries. We will not disclose your data to third parties. In the course of assisting you we may need to transfer your information outside of the EU. By ticking this box you agree to these terms.
+      </label>
+    </div>
+  </div>
+  
+  <input type="submit">
+ 
+</form>
+        
+ {% endblock %}

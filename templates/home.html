@@ -1,0 +1,136 @@
+{% extends 'layout.html'%}
+{% block title%}
+Home
+{% endblock %}
+{% block content %}
+
+<image src="{{ url_for('static',filename='images/supergraphic.png')}}" class="img-fluid" alt="Responsive image">
+  </head>
+<script src="script.js"></script>
+
+
+<div class="container">
+  <!-- Content here -->
+
+
+
+    <!-- Prest title, breif description and anchor button to bottom of the page -->
+    <div class="card-body"><center>
+      <h1 class="card-title">Bosch Business Portal</h1>
+      <p class="card-text">A free area for Consultants, Planners & Specifiers, designed to make information gathering for newbuild & retrofit projects; fast, accurate and in full.</p>
+    </div>
+
+  
+<h3>Portal features at a glance</h3><br>
+
+<div class="card-deck">
+  <div class="card">
+    <img src="{{ url_for('static',filename='images/newproject.png')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" >Create New Project</a></h5>
+      <p class="card-text">Create a bespoke project file.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ url_for('static',filename='images/viewmyprojects.png')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">View My Projects</h5>
+      <p class="card-text">A perminent project specific folder, where you/ your team can access all CAD/ BIM files, drawings, technical data sheets, product specifications etc for a unique job. </p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ url_for('static',filename='images/browseproductlibrary.png')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Browse Product Library</h5>
+      <p class="card-text">Self service area to search for and download specific product technical files.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-deck">
+  <div class="card">
+    <img src="{{ url_for('static',filename='images/requestprojectsupport.png')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Request Project Support</h5>
+      <p class="card-text">Select your project and select a support request. Our team will gather the information, save it in your project fold on your behalf and send an email confirmation when the request is complete.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ url_for('static',filename='images/requestcpd.png')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Request CPD</h5>
+      <p class="card-text">Browse and book a selection of certification courses on the latest industry developments for yourself/ your team.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ url_for('static',filename='images/team.png')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Individual/ team collaborative</h5>
+      <p class="card-text">allow multiple team access/ edit/ contribute to the project folders.</p>
+    </div>
+  </div>
+</div>
+
+
+<br>
+
+  <h2>Register your interest</h2>
+  <p>Thank you for taking the time to hear about the Bosch Consultant Portal.<br><br> If this  is somthing you beleive will help your business succeed, please show your support by filling in the form below. Your response helps give us an indication on what functions we release first.</p>
+
+
+
+  <div class="form">
+    <center><form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8lVGYd95sxYb1r7lO7rmbZwPtF-bxAl8WfCTm0xlp_6iCPw/formResponse" target="_self" method="POST" >
+  First name:<br>
+  <input type="text" name="entry.1113499077" >
+  <br>
+  Last name:<br>
+  <input type="text" name="entry.1945656431" >
+  <br>
+  Email:<br>
+  <input type="text" name="entry.1462703679" >
+  <br><br>
+  <input type="submit" name="submitbutton" class="btn btn-primary" onclick="alert('Thank you for providing your feedback. Have a fantastic day -Mike Berry')"value="Im interested-keep me updated">
+  <br>
+  <br>
+  <input type="checkbox" <p1>We will store the information you provide to us. We will only use this information for the purpose of assisting you in your enquiries. We will not disclose your data to third parties. In the course of assisting you we may need to transfer your information outside of the EU. By ticking this box you agree to these terms.</p1>
+  </form>
+  
+  </center> 
+
+  </div>
+  
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+<!--footer -->
+<img src="{{ url_for('static',filename='images/supergraphic.png')}}" class="img-fluid" alt="Responsive image">
+<div class="container">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+{% endblock %}
+
